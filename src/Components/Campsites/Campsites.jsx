@@ -1,13 +1,5 @@
 import React, { Component } from "react";
-import {
-  Spinner,
-  Image,
-  Container,
-  Row,
-  Col,
-  Button,
-  Carousel
-} from "react-bootstrap";
+import { Spinner, Image, Container, Row, Col, Button } from "react-bootstrap";
 import { getCampsites } from "../../api.js";
 import { Link } from "@reach/router";
 import List from "../List/List.jsx";
