@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import styles from "./Campsite.module.css";
 import { getCampsite } from "../../api";
+import SiteImage from "../SiteImage/SiteImage";
+import { Jumbotron, Container, Col, Row } from "react-bootstrap";
+import List from "../List/List";
 
 class Campsite extends Component {
   state = {
@@ -15,14 +18,62 @@ class Campsite extends Component {
     loading: true
   };
   render() {
-    const { area } = this.state;
+    const {
+      area,
+      siteImg,
+      postCode,
+      description,
+      pitches,
+      activities
+    } = this.state;
     return (
       <div>
-        <h1>{area}</h1>
+        <SiteImage siteImg={siteImg} />
+        <Jumbotron fluid>
+          <Container>
+            <Col>
+              <Row>
+                <h1>{area}</h1>
+              </Row>
+              <Row>
+                <h6>
+                  <a
+                    href={`https://www.google.co.uk/maps/place/` + postCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {postCode}
+                  </a>
+                </h6>
+              </Row>
+              <Row>
+                <p>{description}</p>
+              </Row>
+              <Row>
+                <Col>
+                  <List Type="Pitches" Info={pitches} />
+                </Col>
+                <Col>
+                  <List Type="Activities" Info={activities} />
+                </Col>
+              </Row>
+            </Col>
+          </Container>
+        </Jumbotron>
       </div>
     );
   }
   componentDidMount() {
+    this.fetchCampsite();
+  }
+
+  componentDidUpdate(preProps) {
+    const siteChanged = preProps.id !== this.props.id;
+
+    if (siteChanged) this.fetchCampsite();
+  }
+
+  fetchCampsite = () => {
     getCampsite(this.props.id).then(
       ({
         area,
@@ -47,7 +98,7 @@ class Campsite extends Component {
         });
       }
     );
-  }
+  };
 }
 
 export default Campsite;
