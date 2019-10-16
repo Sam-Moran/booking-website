@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL:
-    "http://my-json-server.typicode.com/angriestofhippos/booking-website/"
+  baseURL: "https://glamping-data.herokuapp.com"
 });
 
 export const getCampsite = id => {
