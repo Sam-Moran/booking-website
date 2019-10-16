@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { getPitches, getActivites } from "../../api.js";
 import { Link } from "@reach/router";
-import styles from "./Header.module.css";
+// import { getPitches, getActivites } from "../../api.js";
+// import styles from "./Header.module.css";
 import logo from "../../Images/logo.png";
 
 class Header extends Component {
@@ -11,7 +11,7 @@ class Header extends Component {
     activities: []
   };
   render() {
-    const { pitches, activities } = this.state;
+    // const { pitches, activities } = this.state;
     return (
       <Navbar bg="dark" variant="dark" sticky="top" expand="lg">
         <Link to="/">
@@ -29,12 +29,6 @@ class Header extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link>
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </Nav.Link>
-
             <NavDropdown
               title="Campsites"
               id="basic-nav-dropdown"
