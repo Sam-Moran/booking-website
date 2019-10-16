@@ -1,0 +1,30 @@
+.campsites {
+  display: grid;
+  margin: auto;
+}
+
+.campsite {
+  border-top: 3px solid grey;
+  /* display: flex;
+  flex-direction: column; */
+  list-style-type: none;
+  list-style: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.campsite:hover {
+  background-color: lightgrey;
+}
+
+.image {
+  height: auto;
+  width: 80vw;
+  max-width: 620px;
+  max-height: 275px;
+  border-radius: 15px;
+  padding: 0 10px 10px 10px;
+}
+
+ul {
+  padding: 10px 10px 0 0;
+}

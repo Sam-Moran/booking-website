@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styles from "./App.module.css";
+import { Router } from "@reach/router";
+
+import Campsites from "./Components/Campsites/Campsites.jsx";
+import Campsite from "./Components/Campsite/Campsite.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <main className={styles.main}>
+        <Router primary={false}>
+          <Campsites path="/" />
+          <Campsite path="/sites/:id" />
+        </Router>
+      </main>
     </div>
   );
 }
