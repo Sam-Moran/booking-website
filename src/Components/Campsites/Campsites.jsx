@@ -1,14 +1,23 @@
 import React, { Component } from "react";
-import { Spinner, Image, Container, Row, Col, Button } from "react-bootstrap";
+import {
+  Spinner,
+  Image,
+  Container,
+  Row,
+  Col,
+  Button,
+  Carousel
+} from "react-bootstrap";
 import { getCampsites } from "../../api.js";
 import { Link } from "@reach/router";
 import List from "../List/List.jsx";
 import styles from "./Campsites.module.css";
+import Hero from "../Hero/Hero.jsx";
 
 class Campsites extends Component {
   state = {
     campsites: [],
-    loading: false
+    loading: true
   };
   render() {
     const { campsites, loading } = this.state;
@@ -20,47 +29,59 @@ class Campsites extends Component {
       );
     } else {
       return (
-        <ul className={styles.campsites}>
-          {campsites.map(campsite => {
-            const { id, area, siteImg, strap, pitches, activities } = campsite;
-            console.log(pitches);
-            return (
-              <li key={id} className={styles.campsite}>
-                <h1>
-                  <Link to={`/sites/${id}`}>{area}</Link>
-                </h1>
-                <Container>
-                  <Row>
-                    <Col md="auto">
-                      <Link to={`/sites/${id}`}>
-                        <Image src={siteImg} className={styles.image} rounded />
-                      </Link>
-                    </Col>
-
-                    <Col>
+        <div>
+          <Hero campsites={campsites} />
+          <ul className={styles.campsites}>
+            {campsites.map(campsite => {
+              const {
+                id,
+                area,
+                siteImg,
+                strap,
+                pitches,
+                activities
+              } = campsite;
+              return (
+                <li key={id} className={styles.campsite}>
+                  <h1>
+                    <Link to={`/sites/${id}`}>{area}</Link>
+                  </h1>
+                  <Container>
+                    <Row>
+                      <Col md="auto">
+                        <Link to={`/sites/${id}`}>
+                          <Image
+                            src={siteImg}
+                            className={styles.image}
+                            rounded
+                          />
+                        </Link>
+                      </Col>
                       <Col>
+                        <Col>
+                          <Row>
+                            <p>{strap}</p>
+                          </Row>
+                          <Row>
+                            <List Type="Pitches" Info={pitches} />
+                            <List Type="Activities" Info={activities} />
+                          </Row>
+                        </Col>
+                      </Col>
+                      <Col md="auto">
                         <Row>
-                          <p>{strap}</p>
-                        </Row>
-                        <Row>
-                          <List Type="Pitches" Info={pitches} />
-                          <List Type="Activities" Info={activities} />
+                          <Link to={`/sites/${id}`}>
+                            <Button variant="info">Read More</Button>
+                          </Link>
                         </Row>
                       </Col>
-                    </Col>
-                    <Col md="auto">
-                      <Row>
-                        <Link to={`/sites/${id}`}>
-                          <Button variant="info">Read More</Button>
-                        </Link>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Container>
-              </li>
-            );
-          })}
-        </ul>
+                    </Row>
+                  </Container>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       );
     }
   }

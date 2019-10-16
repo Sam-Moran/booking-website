@@ -15,17 +15,7 @@ class Campsite extends Component {
     loading: true
   };
   render() {
-    const {
-      area,
-      description,
-      loading,
-      siteImg,
-      pitches,
-      activities,
-      bookingsOpen,
-      bookingsClose,
-      postCode
-    } = this.state;
+    const { area } = this.state;
     return (
       <div>
         <h1>{area}</h1>
