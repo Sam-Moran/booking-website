@@ -1,0 +1,71 @@
+{
+  "sites": [
+    {
+      "id": 1,
+      "area": "Ullswater",
+      "activities": ["pets", "fishing", "pubs"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor magna eget est lorem. Felis eget nunc lobortis mattis aliquam. Curabitur gravida arcu ac tortor. Ac placerat vestibulum lectus mauris ultrices. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Lectus vestibulum mattis ullamcorper velit. Leo in vitae turpis massa sed elementum tempus egestas sed. A erat nam at lectus urna duis convallis convallis. Arcu dictum varius duis at. Id ornare arcu odio ut sem nulla pharetra diam sit. Sagittis eu volutpat odio facilisis mauris sit amet massa. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Vestibulum lectus mauris ultrices eros in cursus turpis. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.",
+      "pitches": ["camping", "yurts", "caravans", "shepards huts"],
+      "bookingsOpen": "2020-03-01T00:00:00.000Z",
+      "bookingsClose": "2020-08-31T23:00:00.000Z",
+      "postCode": " CA11 0LS",
+      "siteImg": "https://images.campsites.co.uk/campsite/19071/017854cb-2690-4c63-a99a-a3fa49f38ae3/840/473/either/the-site.jpg"
+    },
+    {
+      "id": 2,
+      "area": "New Forest",
+      "activities": ["golf", "fishing", "pony riding"],
+      "description": "Elementum nibh tellus molestie nunc non blandit massa enim nec. Urna duis convallis convallis tellus. Consequat ac felis donec et odio pellentesque diam. Morbi tristique senectus et netus et malesuada fames. Risus feugiat in ante metus dictum at tempor commodo. Volutpat diam ut venenatis tellus in metus. Risus viverra adipiscing at in tellus. Vitae auctor eu augue ut. In metus vulputate eu scelerisque felis imperdiet. Urna porttitor rhoncus dolor purus non enim praesent elementum. Rhoncus mattis rhoncus urna neque viverra justo nec. Viverra tellus in hac habitasse. Ultrices in iaculis nunc sed augue. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Turpis nunc eget lorem dolor sed.",
+      "pitches": ["pods", "motorhomes"],
+      "bookingsOpen": "2020-03-01T00:00:00.000Z",
+      "bookingsClose": "2020-06-30T23:00:00.000Z",
+      "postCode": "SO51 6FH",
+      "siteImg": "https://images.campsites.co.uk/subregion/188/7d354d0e-d719-4aa3-a88d-5304bb987b3e/1362/600/either/campsites-in-the-new-forest.jpg"
+    },
+    {
+      "id": 3,
+      "area": "Norfolk",
+      "activities": ["playground", "villages"],
+      "description": "Morbi tristique senectus et netus. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. Sed velit dignissim sodales ut eu sem integer vitae. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Ac turpis egestas maecenas pharetra convallis posuere morbi. Nascetur ridiculus mus mauris vitae. Massa vitae tortor condimentum lacinia. Amet commodo nulla facilisi nullam vehicula ipsum a arcu. Risus sed vulputate odio ut enim blandit volutpat maecenas. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Est velit egestas dui id ornare arcu odio ut. Et tortor consequat id porta nibh venenatis cras sed felis. Varius duis at consectetur lorem donec massa sapien. Nibh ipsum consequat nisl vel pretium lectus quam id leo. At urna condimentum mattis pellentesque id nibh tortor. Nisl purus in mollis nunc sed id semper risus in. Lacus viverra vitae congue eu. Sodales ut etiam sit amet nisl purus. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi.",
+      "pitches": ["camping", "pods", "caravans", "lodges"],
+      "bookingsOpen": "2020-04-01T00:00:00.000Z",
+      "bookingsClose": "2020-09-30T23:00:00.000Z",
+      "postCode": "PE33 0RA",
+      "siteImg": "https://images.campsites.co.uk/subregion/111/e7ba761e-4a21-4977-a893-20f83cf31b24/1362/600/either/campsites-in-norfolk.jpg"
+    },
+    {
+      "id": 4,
+      "area": "Cornwall",
+      "activities": ["swimming", "archery", "hiking"],
+      "description": "Et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Nibh nisl condimentum id venenatis a condimentum vitae. Amet purus gravida quis blandit turpis. Nisl tincidunt eget nullam non nisi est sit amet facilisis. Scelerisque eu ultrices vitae auctor eu augue ut. Mauris rhoncus aenean vel elit scelerisque mauris. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Erat imperdiet sed euismod nisi porta. Facilisis volutpat est velit egestas dui id ornare arcu odio. Cursus vitae congue mauris rhoncus aenean. Interdum consectetur libero id faucibus nisl tincidunt. Rhoncus dolor purus non enim praesent elementum facilisis. Quisque egestas diam in arcu cursus euismod quis. Velit euismod in pellentesque massa placerat duis ultricies.",
+      "pitches": ["camping", "caravans", "motorhomes"],
+      "bookingsOpen": "2020-06-23T23:00:00.000Z",
+      "bookingsClose": "2020-06-27T23:00:00.000Z",
+      "postCode": "TR12 7LX",
+      "siteImg": "https://images.campsites.co.uk/subregion/98/7628041c-0951-418c-9926-6d2d72d0644d/1362/600/either/campsites-in-cornwall.jpg"
+    }
+  ],
+
+  "activities": [
+    "pets",
+    "fishing",
+    "pubs",
+    "golf",
+    "fishing",
+    "pony riding",
+    "playground",
+    "villages",
+    "swimming",
+    "archery",
+    "hiking"
+  ],
+
+  "pitches": [
+    "camping",
+    "yurts",
+    "shepards huts",
+    "pods",
+    "motorhomes",
+    "lodges"
+  ]
+}
